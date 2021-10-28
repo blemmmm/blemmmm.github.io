@@ -1,0 +1,406 @@
+html {
+    box-sizing: border-box;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 73px;
+    top: 0px;
+    background-color: #00000017;
+}
+
+
+#nav {
+    list-style-type: none;
+}
+
+#nav li {
+    float: left;
+    padding: 24px;
+}
+
+#nav li:hover {
+    background-color: #00000029;
+}
+
+.nav-link a{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-link a:hover{
+    color: #e5e5e5;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.1); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 0px;
+    background-image: url("https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");   
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.hero-caption {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    top: 20%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:black;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 5rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+#welcome-section h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0px;
+}
+
+#welcome-section h4 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0px;
+}
+
+#projects {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#projects h2 {
+    font-family: 'Spartan', sans-serif; 
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.project-tile {
+    width: 490px;
+    height: 350px;
+    border-style: solid;
+    border-color: #bfbfbf;
+    border-radius: 2px;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    background-color: #3e3e3e;
+    
+}
+
+.project-tile a {
+    text-decoration: none;
+}
+
+.project-image {
+    object-fit: cover;
+}
+
+.project-title {
+    color: #e5e5e5;
+    padding: 0px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+#contact{
+    padding: 0px;
+    width: auto;
+    background-image: url("https://images.unsplash.com/photo-1543779848-da02f76efe5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");   
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.accounts-caption {
+    position: relative;
+    left: 40%;
+    top: 25%;
+    text-align: left;
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:black;
+}
+
+.accounts-caption h1 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 4rem;
+    margin: 0px;
+
+}
+
+.accounts-caption p {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.account-icons {
+    padding-top: 25px;
+}
+
+.account-icons a {
+    padding: 5px;
+}
+
+#icons {
+    color: black; 
+    font-size: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+    .project-grid {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .project-grid {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .project-tile {
+        margin-bottom: 20px;
+        width: 650px;
+    }
+
+    .project-tile img{
+        width: 650px;
+    }
+    .accounts-caption {
+        top: 27%;
+        left: 35%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .accounts-caption {
+        top: 27%;
+        left: 20%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {    
+    .project-tile {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    .project-tile img{
+        width: 450px;
+    }
+
+    .accounts-caption {
+        top: 27%;
+        left: 7%;
+        width: 90vw;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    #navbar {
+        position: absolute;
+        flex-direction: column;
+        height: 150px;
+        width: 100vw;
+    }
+    #nav li {
+        float: none;
+        padding: 14px;
+    }
+    #nav {
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+    }
+
+    #welcome-section {
+        padding-top: 150px;
+    }
+
+    #welcome-section h4{
+        margin: 0px 0px 10px 23px;
+        font-size: 1rem;
+    }
+
+    #welcome-section h3{
+        margin: 0px 0px 0px 20px;
+        font-size: 1.5rem;
+    }
+
+    #welcome-section h1{
+        margin: 5px 0px 0px 20px;
+        font-size: 4rem;
+    }
+
+    .hero {
+        background-position: 69% 100%;
+    }
+
+    .hero-caption {
+        top: 45%;
+        padding-left: 0px;
+        width: 100vw;
+    }
+
+    #projects {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .project-tile {
+        margin-bottom: 10px;
+        width: 330px;
+    }
+
+    .project-tile img{
+        width: 330px;
+    }
+
+    #contact {
+        background-position: 30%;
+    }
+    
+    .accounts-caption {
+        top: 27%;
+        left: 0%;
+        width: 90vw;
+        padding-left: 20px;
+    }
+
+    .accounts-caption h1{
+        font-size: 3rem;
+    }
+
+    #icons {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project-tile {
+        width: 300px;
+    }
+
+    .project-tile img{
+        width: 300px;
+    }
+    .accounts-caption {
+        top: 27%;
+        left: 0%;
+        width: 90vw;
+        padding-left: 20px;
+    }
+    .accounts-caption h1{
+        font-size: 2.5rem;
+    }
+    #icons {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .project-tile {
+        width: 220px;
+    }
+
+    .project-tile img{
+        width: 220px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+    .accounts-caption {
+        top: 27%;
+        left: 0%;
+        width: 90vw;
+        padding-left: 20px;
+    }
+    .accounts-caption h1{
+        font-size: 2rem;
+    }
+    #icons {
+        font-size: 44px;
+    }
+}
+
+
+

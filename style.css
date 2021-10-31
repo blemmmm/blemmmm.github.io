@@ -105,12 +105,35 @@ main {
     font-weight: 100;
     margin: 0px;
 }
+#skills {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+}
 
-#welcome-section h4 {
-    font-family: 'Noto Serif Display', serif;
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin: 0px;
+#skills h2 {
+    font-family: 'Spartan', sans-serif; 
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.skill-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 60%;
+    
+}
+
+#skill-icon {
+    font-size: 65px;
+    color: #e5e5e5;
+    padding: 30px;
 }
 
 #projects {
@@ -126,15 +149,14 @@ main {
 
 .project-grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
 }
 
 .project-tile {
-    width: 490px;
-    height: 350px;
+    width: 100%;
+    height: 75%;
     border-style: solid;
     border-color: #bfbfbf;
     border-radius: 2px;
@@ -153,6 +175,8 @@ main {
 
 .project-image {
     object-fit: cover;
+    width: 100%;
+    height: 75%;
 }
 
 .project-title {
@@ -160,9 +184,18 @@ main {
     padding: 0px;
     margin: 5px;
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.3em;
     
+}
+
+.project-desc {
+    color: #3e3e3e;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 #contact{
@@ -248,6 +281,15 @@ main {
         left: 20%;
         padding-left: 20px;
     }
+    #skills {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+    .skill-icons {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 540px) {    
@@ -273,7 +315,7 @@ main {
     #navbar {
         position: absolute;
         flex-direction: column;
-        height: 150px;
+        height: 200px;
         width: 100vw;
     }
     #nav li {
@@ -313,6 +355,17 @@ main {
         top: 45%;
         padding-left: 0px;
         width: 100vw;
+    }
+
+    #skills {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .skill-icons {
+        flex-direction: column;
+        height: auto;
     }
 
     #projects {

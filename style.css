@@ -249,6 +249,18 @@ main {
     font-size: 75px;
 }
 
+.tech-stack-list {
+    color: #3e3e3e;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tech-stack-list li {
+    text-align: initial;
+}
+
 @media screen and (max-width: 1024px) {
     .project-grid {
         flex-direction: column;

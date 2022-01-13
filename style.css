@@ -80,7 +80,7 @@ main {
     margin: 0 auto;
     top: 20%; /* Adjust this value to move the positioned div up and down */
     text-align: left;
-    width: 35%;
+    width: 40%;
     padding-left: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -92,9 +92,9 @@ main {
     z-index: 999;
     margin: 0 auto;
     top: 20%; /* Adjust this value to move the positioned div up and down */
-    left: 40%;
+    left: 43%;
     text-align: left;
-    width: 40%;
+    width: 35%;
     height: 60%;
     margin-left: 10%;
     padding-top: 20px;

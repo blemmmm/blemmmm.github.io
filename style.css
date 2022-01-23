@@ -199,7 +199,8 @@ main {
 }
 
 .project-tile a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #e5e5e5;
 }
 
 .project-image {
@@ -331,6 +332,10 @@ main {
         flex-direction: column;
         height: auto;
     }
+    .hero-desc p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
 }
 
 @media screen and (max-width: 540px) {    
@@ -349,6 +354,20 @@ main {
         width: 90vw;
         padding-left: 20px;
     }
+    .hero-desc {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        top: 65%; 
+        left: 0%;
+        width: 92%;
+        height: 30%;
+        margin-left: 0px;
+    }
+    .hero-desc p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -356,7 +375,7 @@ main {
     #navbar {
         position: absolute;
         flex-direction: column;
-        height: 200px;
+        height: 150px;
         width: 100vw;
     }
     #nav li {
@@ -446,6 +465,20 @@ main {
     #icons {
         font-size: 65px;
     }
+    .hero-desc {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        top: 75%; 
+        left: 0%;
+        width: 92%;
+        height: 30%;
+        margin-left: 0px;
+    }
+    .hero-desc p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -467,6 +500,20 @@ main {
     }
     #icons {
         font-size: 55px;
+    }
+    .hero-desc {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        top: 85%; 
+        left: 0%;
+        width: 92%;
+        height: 30%;
+        margin-left: 0px;
+    }
+    .hero-desc p {
+        font-size: 10px;
+        line-height: 1.6;
     }
 }
 
@@ -493,6 +540,21 @@ main {
     }
     #icons {
         font-size: 44px;
+    }
+    
+    .hero-desc {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        top: 85%; 
+        left: 0%;
+        width: 92%;
+        height: 30%;
+        margin-left: 0px;
+    }
+    .hero-desc p {
+        font-size: 10px;
+        line-height: 1.6;
     }
 }
 

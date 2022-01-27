@@ -373,7 +373,7 @@ main {
         margin: 5px 0px 0px 20px;
         font-size: 4rem;
     }
-      
+
     .project-tile {
         margin-bottom: 20px;
         width: 450px;
@@ -517,6 +517,9 @@ main {
 }
 
 @media screen and (max-width: 320px) {
+    .hero-caption {
+        top: 40%;
+    }
     .project-tile {
         width: 300px;
     }

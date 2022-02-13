@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     color: #333333;
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 
 #nav li {
     float: left;
-    padding: 24px;
+    padding: 22px;
 }
 
 #nav li:hover {
@@ -41,7 +42,7 @@ body {
     text-decoration: none;
     color: #333333;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 20px;
     text-align: center;
 }
@@ -79,42 +80,14 @@ main {
     z-index: 999;
     margin: 0 auto;
     top: 20%; /* Adjust this value to move the positioned div up and down */
-    text-align: left;
-    width: 40%;
-    padding-left: 10%;
+    text-align: end;
+    width: 100%;
+    padding-right: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
     color:black;
 }
 
-.hero-desc {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    top: 20%; /* Adjust this value to move the positioned div up and down */
-    left: 43%;
-    text-align: left;
-    width: 35%;
-    height: 60%;
-    margin-left: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #00000017;
-    color: black;
-}
-
-.hero-desc p {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-.hero-desc a {
-    text-decoration: none;
-}
 
 #welcome-section {
     height: 100vh;
@@ -194,13 +167,14 @@ main {
     flex-direction: column;
     justify-content: normal;
     align-items: center;
-    background-color: #3e3e3e;
+    background-color: gainsboro;
     
 }
 
 .project-tile a {
     text-decoration: underline;
     text-decoration-color: #e5e5e5;
+    background-color: #3e3e3e;
 }
 
 .project-image {
@@ -221,11 +195,19 @@ main {
 
 .project-desc {
     color: #3e3e3e;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    font-weight: bold;
+}
+
+.img-height{
+    height: 500px;
+}
+
+.project-badges {
+    margin: 25px 0px;
+    font-family: 'Lato', sans-serif;
 }
 
 #contact{
@@ -267,6 +249,7 @@ main {
 }
 
 .account-icons {
+    display:flex;
     padding-top: 25px;
 }
 
@@ -322,15 +305,6 @@ main {
         top: 27%;
         left: 20%;
         padding-left: 20px;
-    }
-    #skills {
-        padding-top: 25px;
-        padding-bottom: 50px;
-        height: auto;
-    }
-    .skill-icons {
-        flex-direction: column;
-        height: auto;
     }
     .hero-desc p {
         font-size: 10px;
@@ -452,11 +426,7 @@ main {
         width: 100vw;
     }
 
-    #skills {
-        padding-top: 25px;
-        padding-bottom: 50px;
-        height: auto;
-    }
+
 
     .skill-icons {
         flex-direction: column;
@@ -464,7 +434,7 @@ main {
     }
 
     #projects {
-        padding-top: 25px;
+        padding-top: 160px;
         padding-bottom: 50px;
     }
 
@@ -480,6 +450,7 @@ main {
 
     .project-tile img{
         width: 330px;
+        height: auto;
     }
 
     #contact {

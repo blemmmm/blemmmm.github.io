@@ -115,10 +115,6 @@ const HomeView = () => {
                 <span className="mx-2">D3.js</span>
               </div>
               <div className="flex items-center text-normal font-semibold">
-                <Icon icon="logos:adobe-photoshop" width={50} />
-                <span className="mx-2">Adobe Photoshop</span>
-              </div>
-              <div className="flex items-center text-normal font-semibold">
                 <Icon icon="logos:axios" width={50} />
                 <span className="mx-2">Axios</span>
               </div>

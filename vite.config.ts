@@ -15,7 +15,6 @@ export const aliases = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/blemmmm.github.io/",
   plugins: [react()],
   resolve: { alias: aliases },
 });

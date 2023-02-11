@@ -1,142 +1,335 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Blessly Pera</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+Display:ital,wght@1,300&family=Spartan:wght@700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <title>Blessly Pera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+Display:ital,wght@1,300&family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <nav id="navbar" class="shadow-xl">
-        <ul id="nav">
-            <li class="nav-link"><a href="#welcome-section">ABOUT ME</a></li>
-            <li class="nav-link"><a href="#projects">PROJECTS</a></li>
-            <li class="nav-link"><a href="#contact">CONTACT ME</a></li>
-        </ul>
+      <ul id="nav">
+        <li class="nav-link"><a href="#welcome-section">ABOUT ME</a></li>
+        <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+        <li class="nav-link"><a href="#contact">CONTACT ME</a></li>
+      </ul>
     </nav>
     <main>
-        <section id="welcome-section">
-            <div class="hero">
-                <div class="hero-caption">
-                    <h1>Hey there!</h1>
-                    <h3>I'm Blessly 😉</h3>
-                </div>
+      <section id="welcome-section">
+        <div class="hero">
+          <div class="hero-caption">
+            <h1>Hey there!</h1>
+            <h3>I'm Blessly 😉</h3>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <h2>My Recent Projects</h2>
+          <div class="project-grid">
+            <div class="project-tile">
+              <a href="https://hippodirect.blemmmm.xyz/" target="_blank">
+                <p class="project-title" title="">
+                  HippoDirect - eCommerce Storefront
+                </p>
+                <img
+                  class="project-image"
+                  src="https://imagehippo.blemmmm.xyz/i/cae88433a1048cc003a510b41d996981529974a7c285f20bd96977aa.JPG"
+                  alt="project"
+                />
+              </a>
             </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <h2>My Recent Projects</h2>
-                <div class="project-grid">
-                    <div class="project-tile">
-                        <a href="https://hippodirect.blemmmm.xyz/" target="_blank">
-                            <p class="project-title" title="">HippoDirect - eCommerce Storefront</p>
-                            <img class="project-image" src="https://imagehippo.blemmmm.xyz/i/cae88433a1048cc003a510b41d996981529974a7c285f20bd96977aa.JPG" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc" style="margin-bottom: 0px;">An app showing ecommerce browsing and searching experience using Typesense API. Dataset used is from Algolia's public set of datasets <a href="https://github.com/algolia/datasets" target="_blank">https://github.com/algolia/datasets</a></p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">ReactJS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Node.js</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Typesense API</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">TailwindCSS</span>
-                    </div>
-                    <div class="project-tile">
-                        <a style="width: inherit; background-color: gainsboro;" href="https://t.me/democafe" target="_blank">
-                            <p style="background-color: #3e3e3e; padding: 5px; margin: 0px;" class="project-title" title="">Demo Cafe Telegram Bot(@dmcafe_bot)</p>
-                            <img class="object-scale-down w-full img-height px-28" src="https://imagehippo.blemmmm.xyz/i/634b0a698efb8bbf08bec8e7ee00d426fb2bb53223d61c0e89a8dd86.jpg" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc">
-                        Use this bot to try the Telegram Payments without actually paying anything. 
-                        This bot can send you an invoice and accept a test payment. 
-                        <br><br>
-                        To "buy" something, update your Telegram app to the latest version, use the Pay button and enter the following test card details:
-                        <br><br>
-                        Card Number: <b>4242 4242 4242 4242</b><br>
-                        Security Code: <b>Any 3 digits</b>.<br>
-                        Expiry Date: <b>Any date in the future</b>.
-                        <br><br>
-                        To send one of these to any chat, start a message with <code>@dmcafe_bot</code> followed by a space – and pick one of the suggestions.
-                    </p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Javascript</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Node.js</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Telegram Bot API</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Bot Payments API</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">node-fetch</span>
-                    </div>
-                    <div class="project-tile">
-                        <a href="https://imagehippo.blemmmm.xyz/" target="_blank">
-                            <p class="project-title" title="https://imagehippo.blemmmm.xyz/">ImageHippo - Free Image Upload</p>
-                            <img class="project-image" src="https://i.imgur.com/23qYv5g.jpg" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc" style="margin-bottom: 0px;">This project is like Imgur clone, simple and fast. It allows you to upload and share your photo anywhere, including your social media.             </p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">ReactJS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">TailwindCSS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Node.js</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Fastify</span>
-                    </div>
-                    <div class="project-tile">
-                        <a href="https://profile-app.blemmmm.xyz" target="_blank">
-                            <p class="project-title" title="https://profile-app.blemmmm.xyz">Profile App</p>
-                            <img class="project-image" src="https://i.imgur.com/SGDtbpP.jpg" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc" style="margin-bottom: 0px;">A mini social profile website. It allows you to sign-up, sign-in, view and edit your profile. It also has an admin privileges that allows you to view and delete users. Additional feature in this app is the 2x3 Image Gallery that generates random images from Unsplash Source API.  
-                    </p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">ReactJS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">TailwindCSS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Node.js</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Postgresql</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Unsplash Source API</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Fastify</span>
-                    </div>
-                    <div class="project-tile">
-                        <a href="https://blemmmm.github.io/my-dashboard/" target="_blank">
-                            <p class="project-title" title="https://blemmmm.github.io/my-dashboard/">Personal Dashboard</p>
-                            <img class="project-image" src="https://i.imgur.com/0PQe8nD.jpg" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc">A personal dashboard page with to-do list and real-time clock. </p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">ReactJS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">TailwindCSS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">GitHub Pages</span>
-                    </div>
-                    <div class="project-tile">
-                        <a href="https://blemmmm.github.io/landing-page/" target="_blank">
-                            <p class="project-title" title="https://blemmmm.github.io/landing-page/">Product Landing Page</p>
-                            <img class="project-image" src="https://i.imgur.com/0ga7Eih.jpg" alt="project" />
-                        </a>
-                    </div>
-                    <p class="project-desc">A responsive product landing page using HTML and CSS from scratch.</p>
-                    <div class="project-badges">
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">HTML</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">CSS</span>
-                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">Responsive</span>
-                    </div>
-                </div>
+            <p class="project-desc" style="margin-bottom: 0px">
+              An app showing ecommerce browsing and searching experience using
+              Typesense API. Dataset used is from Algolia's public set of
+              datasets
+              <a href="https://github.com/algolia/datasets" target="_blank"
+                >https://github.com/algolia/datasets</a
+              >
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >ReactJS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Node.js</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Typesense API</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >TailwindCSS</span
+              >
             </div>
-        </section>
-        <section id="contact">
-            <div class="accounts-caption">
-                <h1>Lets collaborate!</h1>
-                <p>You can connect with me thru these accounts:</p> 
-                <div class="account-icons">
-                    <a href="https://github.com/blemmmm" target="_blank" id="profile-link"><span class="iconify" id="icons" data-icon="akar-icons:github-fill"></span></a>
-                    <a href="https://twitter.com/blemmmm" target="_blank" id="profile-link"><span class="iconify" id="icons" data-icon="akar-icons:twitter-fill"></span></a>
-                    <a href="https://linkedin.com/in/blesslypera/" target="_blank" id="profile-link"><span class="iconify" id="icons" data-icon="akar-icons:linkedin-fill"></span></a>
-                    <a href="mailto:pera.blessly@gmail.com" target="_blank" id="profile-link"><span class="iconify" id="icons" data-icon="akar-icons:google-fill"></span></a>
-                </div>
+            <div class="project-tile">
+              <a
+                style="width: inherit; background-color: gainsboro"
+                href="https://t.me/democafe"
+                target="_blank"
+              >
+                <p
+                  style="background-color: #3e3e3e; padding: 5px; margin: 0px"
+                  class="project-title"
+                  title=""
+                >
+                  Demo Cafe Telegram Bot(@dmcafe_bot)
+                </p>
+                <img
+                  class="object-scale-down w-full img-height px-28"
+                  src="https://imagehippo.blemmmm.xyz/i/634b0a698efb8bbf08bec8e7ee00d426fb2bb53223d61c0e89a8dd86.jpg"
+                  alt="project"
+                />
+              </a>
             </div>
-        </section>
+            <p class="project-desc">
+              Use this bot to try the Telegram Payments without actually paying
+              anything. This bot can send you an invoice and accept a test
+              payment.
+              <br /><br />
+              To "buy" something, update your Telegram app to the latest
+              version, use the Pay button and enter the following test card
+              details:
+              <br /><br />
+              Card Number: <b>4242 4242 4242 4242</b><br />
+              Security Code: <b>Any 3 digits</b>.<br />
+              Expiry Date: <b>Any date in the future</b>. <br /><br />
+              To send one of these to any chat, start a message with
+              <code>@dmcafe_bot</code> followed by a space – and pick one of the
+              suggestions.
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Javascript</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Node.js</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Telegram Bot API</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Bot Payments API</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >node-fetch</span
+              >
+            </div>
+            <div class="project-tile">
+              <a href="https://imagehippo.blemmmm.xyz/" target="_blank">
+                <p
+                  class="project-title"
+                  title="https://imagehippo.blemmmm.xyz/"
+                >
+                  ImageHippo - Free Image Upload
+                </p>
+                <img
+                  class="project-image"
+                  src="https://i.imgur.com/23qYv5g.jpg"
+                  alt="project"
+                />
+              </a>
+            </div>
+            <p class="project-desc" style="margin-bottom: 0px">
+              This project is like Imgur clone, simple and fast. It allows you
+              to upload and share your photo anywhere, including your social
+              media.
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >ReactJS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >TailwindCSS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Node.js</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Fastify</span
+              >
+            </div>
+            <div class="project-tile">
+              <a href="https://profile-app.blemmmm.xyz" target="_blank">
+                <p
+                  class="project-title"
+                  title="https://profile-app.blemmmm.xyz"
+                >
+                  Profile App
+                </p>
+                <img
+                  class="project-image"
+                  src="https://i.imgur.com/SGDtbpP.jpg"
+                  alt="project"
+                />
+              </a>
+            </div>
+            <p class="project-desc" style="margin-bottom: 0px">
+              A mini social profile website. It allows you to sign-up, sign-in,
+              view and edit your profile. It also has an admin privileges that
+              allows you to view and delete users. Additional feature in this
+              app is the 2x3 Image Gallery that generates random images from
+              Unsplash Source API.
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >ReactJS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >TailwindCSS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Node.js</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Postgresql</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Unsplash Source API</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Fastify</span
+              >
+            </div>
+            <div class="project-tile">
+              <a href="https://blemmmm.github.io/my-dashboard/" target="_blank">
+                <p
+                  class="project-title"
+                  title="https://blemmmm.github.io/my-dashboard/"
+                >
+                  Personal Dashboard
+                </p>
+                <img
+                  class="project-image"
+                  src="https://i.imgur.com/0PQe8nD.jpg"
+                  alt="project"
+                />
+              </a>
+            </div>
+            <p class="project-desc">
+              A personal dashboard page with to-do list and real-time clock.
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >ReactJS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >TailwindCSS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >GitHub Pages</span
+              >
+            </div>
+            <div class="project-tile">
+              <a href="https://blemmmm.github.io/landing-page/" target="_blank">
+                <p
+                  class="project-title"
+                  title="https://blemmmm.github.io/landing-page/"
+                >
+                  Product Landing Page
+                </p>
+                <img
+                  class="project-image"
+                  src="https://i.imgur.com/0ga7Eih.jpg"
+                  alt="project"
+                />
+              </a>
+            </div>
+            <p class="project-desc">
+              A responsive product landing page using HTML and CSS from scratch.
+            </p>
+            <div class="project-badges">
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >HTML</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >CSS</span
+              >
+              <span
+                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded"
+                >Responsive</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="accounts-caption">
+          <h1>Lets collaborate!</h1>
+          <p>You can connect with me thru these accounts:</p>
+          <div class="account-icons">
+            <a
+              href="https://github.com/blemmmm"
+              target="_blank"
+              id="profile-link"
+              ><span
+                class="iconify"
+                id="icons"
+                data-icon="akar-icons:github-fill"
+              ></span
+            ></a>
+            <a
+              href="https://twitter.com/blemmmm"
+              target="_blank"
+              id="profile-link"
+              ><span
+                class="iconify"
+                id="icons"
+                data-icon="akar-icons:twitter-fill"
+              ></span
+            ></a>
+            <a
+              href="https://linkedin.com/in/blesslypera/"
+              target="_blank"
+              id="profile-link"
+              ><span
+                class="iconify"
+                id="icons"
+                data-icon="akar-icons:linkedin-fill"
+              ></span
+            ></a>
+            <a
+              href="mailto:pera.blessly@gmail.com"
+              target="_blank"
+              id="profile-link"
+              ><span
+                class="iconify"
+                id="icons"
+                data-icon="akar-icons:google-fill"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

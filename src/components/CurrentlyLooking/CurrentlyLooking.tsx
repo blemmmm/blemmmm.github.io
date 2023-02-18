@@ -5,7 +5,7 @@ const CurrentlyLooking = () => {
     <div className="bg-[#D5CBD5] p-1">
       <div className="flex justify-center items-center text-sm">
         <span>
-          Current looking for a{" "}
+          Currently looking for a{" "}
           <span className="font-bold">Part-time/Freelance</span> job as{" "}
           <span className="font-bold"> Front-end Developer</span>
         </span>

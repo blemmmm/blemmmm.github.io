@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <footer className="h-[200px] px-40 bg-[#563156]">
+    <footer className="h-[200px] px-40 bg-[#563156] mt-10">
       <div className="flex justify-between items-center h-full">
         <div className="flex flex-col">
           <img src={Logo} alt="blessly" className="w-32" />

@@ -12,7 +12,7 @@ export const DefaultLayout = ({ children }: Props) => {
     <main className="flex flex-col justify-between">
       <CurrentlyLooking />
       <Navbar />
-      <div className="h-auto mx-40">{children}</div>
+      <div className="h-auto px-40">{children}</div>
       <Footer />
     </main>
   );

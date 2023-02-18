@@ -1,7 +1,10 @@
 import React from "react";
 import { Row, Col, Typography, Button, Space } from "antd";
 import HeroSVG from "@assets/hero.svg";
+import PortfolioSVG from "@assets/portfolio.svg";
+import ImageHippo from "@assets/imagehippo.jpg";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const HomeView = () => {
   return (
@@ -22,7 +25,11 @@ const HomeView = () => {
             <img src={HeroSVG} alt="hero" />
           </div>
         </Col>
-        <Button type="primary" className="bg-[#563156] h-10 w-52">
+        <Button
+          type="primary"
+          className="bg-[#563156] h-10 w-52 flex justify-center items-center"
+          href="#recent-work"
+        >
           Explore my work
         </Button>
       </Row>
@@ -37,7 +44,8 @@ const HomeView = () => {
               Development
             </Typography.Text>
             <p>
-              Front-end development, data visualization and API integration.
+              Front-end development, landing pages, data visualization and API
+              integration.
             </p>
           </div>
         </Col>
@@ -57,9 +65,12 @@ const HomeView = () => {
           <Icon icon="mdi:responsive" color="#563156" width={100} />
           <div className="flex flex-col ml-2">
             <Typography.Text className="text-3xl font-bold mb-1.5">
-              Responsive
+              Content Creation
             </Typography.Text>
-            <p>Transform pages responsively according to screen resolutions.</p>
+            <p>
+              Creates social media contents and techincal marketing materials
+              (video editing and graphics).
+            </p>
           </div>
         </Col>
       </Row>
@@ -142,6 +153,37 @@ const HomeView = () => {
           </div>
         </Space>
       </Row>
+      <Row gutter={24} className="my-20 py-10 h-[50vh]" id="recent-work">
+        <Col span={12}>
+          <div className="float-left">
+            <img src={PortfolioSVG} alt="portfolio" />
+          </div>
+        </Col>
+        <Col span={12} className="flex flex-col items-center justify-center">
+          <Typography.Text className="font-black text-6xl mb-2">
+            Recent Work
+          </Typography.Text>
+        </Col>
+      </Row>
+      {/* <Row gutter={24} className="my-10">
+        <Col span={12}>
+          <div>
+            <img
+              src="https://imagehippo.blemmmm.xyz/i/cae88433a1048cc003a510b41d996981529974a7c285f20bd96977aa.JPG"
+              alt="project"
+            />
+            <Typography.Text className="font-bold text-3xl mt-2">
+              HippoDirect - eCommerce Storefront with TypeSense Search Engine
+            </Typography.Text>
+          </div>
+        </Col>
+        <Col span={12}>
+          <img src={ImageHippo} alt="imagehippo" />
+          <Typography.Text className="font-bold text-3xl mt-2">
+            ImageHippo - Free Image Upload
+          </Typography.Text>
+        </Col>
+      </Row> */}
     </div>
   );
 };

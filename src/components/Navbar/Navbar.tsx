@@ -11,7 +11,7 @@ const Navbar = () => {
         </Link>
         <div className="flex justify-between w-[300px] font-semibold">
           <Link to="/">Home</Link>
-          <Link to="/work">Work</Link>
+          <a href="#recent-work">Work</a>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>

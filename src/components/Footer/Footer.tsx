@@ -2,13 +2,16 @@ import React from "react";
 import Logo from "@assets/blessly-white.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { Typography } from "antd";
 
 const Footer = () => {
   return (
-    <footer className="h-[200px] px-40 bg-[#563156] mt-10">
+    <footer className="h-[200px] px-40 pb-10 pt-6 bg-[#563156] mt-10">
       <div className="flex justify-between items-center h-full">
         <div className="flex flex-col">
-          <img src={Logo} alt="blessly" className="w-32" />
+          <Typography.Text className="font-bold text-3xl my-3 text-white">
+            Blessly Pera
+          </Typography.Text>
           <div className="flex justify-between w-[200px]">
             <Link to="https://www.linkedin.com/in/blesslypera/" target="_blank">
               <Icon icon="mdi:linkedin" width={35} color="#ffffff" />

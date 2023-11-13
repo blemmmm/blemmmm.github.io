@@ -5,37 +5,66 @@ import PortfolioSVG from "@assets/portfolio.svg";
 import ImageHippo from "@assets/imagehippo.jpg";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 
 const HomeView = () => {
+  const { opacity, transform } = useSpring({
+    opacity: 1,
+    transform: "translateX(0)",
+    from: { opacity: 0, transform: "translateX(-50px)" },
+    delay: 500,
+  });
+
+  const animationProps = {
+    opacity,
+    transform,
+  };
   return (
     <div className="flex flex-col justify-center">
       <Row gutter={24} className="h-[70vh] my-10 ">
         <Col span={13}>
-          <div className="flex flex-col">
-            <Typography.Text className="font-black text-6xl mb-2">
-              Bringing your ideas to life, one line of code at a time.
-            </Typography.Text>
-            <Typography.Text className="font-light text-2xl mt-1 ml-1">
-              Kickstart your brand and business with my expertise.
-            </Typography.Text>
-          </div>
+          <animated.div style={animationProps} className="flex flex-col">
+            <div className="flex flex-col">
+              <Typography.Text className="font-black text-6xl mb-2">
+                Blessly Pera
+              </Typography.Text>
+              <Typography.Text className="font-semibold text-xl mt-1 ml-1 text-[#563156]">
+                Front-end Web Developer
+              </Typography.Text>
+
+              <Typography.Text className="font-light text-lg mt-2 ml-1">
+                With a solid history of working in the AI, Media
+                Monitoring/Analytics, and Ecommerce industries, I bring my
+                expertise in front-end development to create engaging and
+                user-friendly websites. <br />I speak Javascript (ReactJS /
+                TypeScript).
+              </Typography.Text>
+            </div>
+          </animated.div>
         </Col>
         <Col span={11}>
-          <div className="float-right">
-            <img src={HeroSVG} alt="hero" />
-          </div>
+          <animated.div
+            style={{ ...animationProps, transform: "translateX(50px)" }}
+            className="flex flex-col"
+          >
+            <div className="float-right">
+              <img src={HeroSVG} alt="hero" />
+            </div>
+          </animated.div>
         </Col>
-        <Button
-          type="primary"
-          className="bg-[#563156] h-10 w-52 flex justify-center items-center"
-          href="#recent-work"
-        >
-          Explore my work
-        </Button>
+        <animated.div style={animationProps} className="flex flex-col">
+          <Button
+            type="primary"
+            className="bg-[#563156] h-10 w-52 flex justify-center items-center"
+            href="#recent-work"
+          >
+            Explore my work
+          </Button>
+        </animated.div>
       </Row>
       <Row
         gutter={24}
-        className="my-10 h-[50vh] flex items-center bg-[#E6E6E6]"
+        className="my-10 h-[50vh] flex items-center bg-[#f2f2f2] rounded-lg"
       >
         <Col span={8} className="flex items-start justify-start">
           <Icon icon="mdi:react" color="#563156" width={100} />
@@ -67,10 +96,7 @@ const HomeView = () => {
             <Typography.Text className="text-3xl font-bold mb-1.5">
               Content Creation
             </Typography.Text>
-            <p>
-              Creates social media contents and techincal marketing materials
-              (video editing and graphics).
-            </p>
+            <p>Creates product overviews and technical marketing materials.</p>
           </div>
         </Col>
       </Row>
@@ -134,8 +160,8 @@ const HomeView = () => {
                 <span className="mx-2">NodeJS</span>
               </div>
               <div className="flex items-center text-normal font-semibold">
-                <Icon icon="logos:fastify-icon" width={50} />
-                <span className="mx-2">Fastify</span>
+                <Icon icon="devicon:express" width={50} />
+                <span className="mx-2">Express</span>
               </div>
               <div className="flex items-center text-normal font-semibold">
                 <Icon icon="logos:git-icon" width={50} />
@@ -148,6 +174,9 @@ const HomeView = () => {
               <div className="flex items-center text-normal font-semibold">
                 <Icon icon="logos:adobe-photoshop" width={50} />
                 <span className="mx-2">Adobe Photoshop</span>
+              </div>
+              <div className="flex items-end text-normal font-semibold">
+                <span className="mx-2">and more...</span>
               </div>
             </div>
           </div>

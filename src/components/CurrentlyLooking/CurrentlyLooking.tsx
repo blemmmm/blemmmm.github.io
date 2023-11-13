@@ -2,7 +2,7 @@ import React from "react";
 
 const CurrentlyLooking = () => {
   return (
-    <div className="bg-[#D5CBD5] p-1">
+    <div className="bg-[#D5CBD5] p-1 hidden">
       <div className="flex justify-center items-center text-sm">
         <span>
           Currently looking for a{" "}

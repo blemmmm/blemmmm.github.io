@@ -182,7 +182,7 @@ const HomeView = () => {
           </div>
         </Space>
       </Row>
-      <Row gutter={24} className="my-20 py-10 h-[50vh]" id="recent-work">
+      <Row gutter={24} className="my-20 py-10 h-[50vh] hidden" id="recent-work">
         <Col span={12}>
           <div className="float-left">
             <img src={PortfolioSVG} alt="portfolio" />

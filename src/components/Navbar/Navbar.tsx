@@ -1,7 +1,5 @@
-import React from "react";
-import Logo from "@assets/blessly.svg";
-import { Link } from "react-router-dom";
 import { Typography } from "antd";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,11 +11,10 @@ const Navbar = () => {
           </Typography.Text>
           {/* <img src={Logo} alt="blessly" /> */}
         </Link>
-        <div className="flex justify-between w-[300px] font-semibold">
+        <div className="flex justify-evenly w-[300px] font-semibold">
           <Link to="/">Home</Link>
-          <a href="#recent-work">Work</a>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <a href="#recent-projects">Work</a>
+          <a href="#contact-details">Contact</a>
         </div>
       </div>
     </nav>

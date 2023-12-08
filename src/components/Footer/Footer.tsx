@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="h-[200px] px-40 pb-10 pt-6 bg-[#563156] mt-10">
       <div className="flex justify-between items-center h-full">
-        <div className="flex flex-col">
+        <div className="hidden">
           <Typography.Text className="font-bold text-3xl my-3 text-white">
             Blessly Pera
           </Typography.Text>
